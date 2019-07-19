@@ -27,4 +27,12 @@ public class DecodingTest {
         Decoding testDecoding= new Decoding("Kaburu",1);
         assertEquals(1,testDecoding.getKey());
     }
+    @Test
+    public void encode_String(){
+        Decoding testDecode = new Decoding("bc",1);
+        testDecode.getInput();
+        testDecode.getKey();
+
+        assertEquals("ab",testDecode.decode());
+    }
 }

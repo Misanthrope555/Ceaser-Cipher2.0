@@ -15,4 +15,16 @@ public class Decoding {
     public int getKey(){
         return key;
     }
+    public String decode(){
+        String results= "";
+        for(int i=0;i<getInput().length();i++){
+
+            char character = this.input.charAt(i);
+
+            char decrypt = (char) (character-getKey());
+
+            results+= decrypt;
+        }
+        return results;
+    }
 }
