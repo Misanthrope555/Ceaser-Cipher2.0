@@ -45,10 +45,12 @@ public class App {
                 String exitoption= read.next();
                 if(exitoption.equals("Yes")){
                     isProgrammingRunning=false;
-                }else (exitoption.equals("No")){
+                }else if (exitoption.equals("No")){
                     isProgrammingRunning=true;
                 }
 
+            }else {
+                System.out.println("Invalid choice! Please recheck the options given by the program");
             }
 
 
