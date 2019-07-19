@@ -1,3 +1,4 @@
+import models.Decoding;
 import models.Encoding;
 
 import java.util.Scanner;
@@ -25,6 +26,16 @@ public class App {
             String encryption= userEncrypt.encode();
             System.out.println("Your word was encrypted to:");
             System.out.println(encryption);
+        } else if (userword.equals("2")){
+            System.out.println("Enter the word you want to decrypt");
+            String userinput=read.next();
+            System.out.println("Enter the key you want to encrypt with:");
+            int userkey=read.nextInt();
+
+            Decoding decrypt= new Decoding(userinput,userkey);
+            String decryptword= decrypt.decode();
+            System.out.println(decryptword);
+
         }
 
 
