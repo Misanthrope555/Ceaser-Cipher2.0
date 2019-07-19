@@ -1,3 +1,5 @@
+import models.Encoding;
+
 import java.util.Scanner;
 public class App {
     public static void main(String []args){
@@ -13,7 +15,17 @@ public class App {
                 " 3) Exit a program");
         String userword= read.next();
 
-        if
+        if(userword.equals("1")){
+            System.out.println("Enter the word you want to Encrypt:");
+            String userWord= read.next();
+            System.out.println("Enter the key you want for Encryption");
+            int userInt= read.nextInt();
+
+            Encoding userEncrypt= new Encoding(userWord,userInt);
+            String encryption= userEncrypt.encode();
+            System.out.println("Your word was encrypted to:");
+            System.out.println(encryption);
+        }
 
 
 
