@@ -8,6 +8,13 @@ public class Encoding {
         this.input=input;
         this.key=key;
     }
+    public String getInput(){
+        return input;
+    }
+
+    public int getKey(){
+        return key;
+    }
 
 
 
