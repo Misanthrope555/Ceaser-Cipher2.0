@@ -16,6 +16,22 @@ public class Encoding {
         return key;
     }
 
+    public String encode(){
+        String encodeword="";
+        for (int i=0;i < getInput().length();i++){
+
+            char character = this.input.charAt(i);
+
+            char encode=(char)(character + getKey());
+
+            encodeword+= encode;
+
+
+        }
+        return  encodeword;
+
+    }
+
 
 
 

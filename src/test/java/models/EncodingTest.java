@@ -29,4 +29,12 @@ public class EncodingTest {
         Encoding testEncording= new Encoding("Edwin", 2);
         assertEquals(2,testEncording.getKey());
     }
+    @Test
+    public void encrypt_String(){
+        Encoding testEncording= new Encoding("ab", 1);
+        testEncording.getInput();
+        testEncording.getKey();
+        assertEquals("bc",testEncording.encode());
+
+    }
 }
