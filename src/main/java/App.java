@@ -3,7 +3,7 @@ import models.Encoding;
 
 import java.util.Scanner;
 public class App {
-    public static void main(String []args) {
+    public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         boolean isProgrammingRunning = true;
 
@@ -42,18 +42,21 @@ public class App {
                 System.out.println("Are you sure you want to exit? \n" +
                         "Yes\n" +
                         "No");
-                String exitoption= read.next();
-                if(exitoption.equals("Yes")){
-                    isProgrammingRunning=false;
-                }else if (exitoption.equals("No")){
-                    isProgrammingRunning=true;
+                String exitoption = read.next();
+                if (exitoption.equals("Yes")) {
+                    isProgrammingRunning = false;
+                } else if (exitoption.equals("No")) {
+                    isProgrammingRunning = true;
+//                } else {
+//                    isProgrammingRunning=false;
+//                }
+
+                } else {
+                    System.out.println("Invalid choice! Please recheck the options given by the program");
                 }
 
-            }else {
-                System.out.println("Invalid choice! Please recheck the options given by the program");
+
             }
-
-
         }
     }
 }
