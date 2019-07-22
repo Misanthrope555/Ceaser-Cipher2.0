@@ -15,6 +15,12 @@ public class DecodingTest {
     @After
     public void tearDown() throws Exception {
     }
+    @Test
+    public void Decoding_InstantiatesCorrectly_True(){
+        Decoding testDecoding= new Decoding("Kaburu",1);
+        assertTrue(testDecoding instanceof  Decoding);
+
+    }
 
     @Test
     public void getInput_String() {
@@ -34,5 +40,13 @@ public class DecodingTest {
         testDecode.getKey();
 
         assertEquals("ab",testDecode.decode());
+    }
+
+    @Test
+    public void Encoding_LetterShiftsToTheLeft_String(){
+        Decoding testDecoding= new Decoding("bc",1);
+        testDecoding.getInput();
+        testDecoding.getKey();
+        assertEquals("ab",testDecoding.decode());
     }
 }

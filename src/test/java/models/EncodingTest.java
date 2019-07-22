@@ -19,6 +19,12 @@ public class EncodingTest {
     }
 
     @Test
+    public void instantiatesCorrectly_True(){
+        Encoding testEncoding= new Encoding("Edwin",2);
+        assertTrue(testEncoding instanceof  Encoding);
+    }
+
+    @Test
     public void getInput_String() {
         Encoding testEncoding= new Encoding("Edwin",2);
         assertEquals("Edwin",testEncoding.getInput());

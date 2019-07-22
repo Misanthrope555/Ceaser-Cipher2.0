@@ -22,9 +22,10 @@ public class App {
                 System.out.println("Enter the word you want to Encrypt:");
                 String userWord = read.next();
                 System.out.println("Enter the key you want for Encryption");
-                int userInt = read.nextInt();
+                String userInt = read.next();
+                int userint= Integer.parseInt(userInt);
 
-                Encoding userEncrypt = new Encoding(userWord, userInt);
+                Encoding userEncrypt = new Encoding(userWord ,userint);
                 String encryption = userEncrypt.encode();
                 System.out.println("Your word was encrypted to:");
                 System.out.println(encryption);

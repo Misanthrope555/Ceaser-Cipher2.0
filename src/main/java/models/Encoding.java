@@ -20,15 +20,15 @@ public class Encoding {
         String encodeword="";
         for (int i=0;i < getInput().length();i++){
 
-            char character = this.input.charAt(i);
+            char character = this.input.toString().charAt(i)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
 
-            char encode=(char)(character + getKey());
+            char encode= (char) (character + getKey());
 
             encodeword+= encode;
 
 
         }
-        return  encodeword;
+        return encodeword;
 
     }
 
