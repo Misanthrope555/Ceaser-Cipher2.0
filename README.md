@@ -1,29 +1,39 @@
-##Caeser-Cipher
+# Caesar Cipher
+* This program was created using Java language.
+#### Author
+* Edwin Kaburu.
+### Description
+* This program uses a command line interface to encrypt or decrypt words using an appropriate key which is a number.
+* The encryption works by shifting the word characters the number of characters provided by the key e.g encrypting 'ab' by a key of 1 makes it 'bc', while decrypting returns the original value of the encrypted word.
+* If the word 'name' was encrypted using a key of 1 it would return 'obnf'.If I was to decrypt 'obnf' I would have to know the key that was used for its encryption, which is 1, for it to return 'name'.
 
-*This is a caeser-cipher program that was created
-by Java.
+## Prerequisites & setup
+#### Prerequisites
+* Git.
+* Java
+* Text Editor of your choice.
+* Gradle
 
-####Author
-* Edwin Kaburu
+## BDD
+| INPUT                                                                       | OUTPUT             |
+|-----------------------------------------------------------------------------|--------------------|
+| Encrypt choice followed by the text to be encrypted and the key to be used  | The encrypted text |
+| Decrypt choice followed by the text to be decrypted and the key to be used  | The decrypted text |
 
-####Description
+### How to use
+* Type number '1' to encrypt.
+* Enter the word you would like to encrypt.
+* Enter a number to use as the key for the encryption.
+* Type number '2' to decrypt.
+* Type the word to be decrypted.
+* Enter the number to be used as the key for decryption.
+* To exit type number '3'.
+* Confirm whether you would like to exit the application by typing either '1' for yes and '2' for no.
+#### Known Bugs
+* In case of of any bugs found please contact using the information below.
+#### Contact Information
+* email - edkkaburu@gmail.com
 
-* This is a program that run on the command line that encypt and decrypt words using a key which have to be an integer.
-
-
-####Prerequisites:
-*Git
-*Java
-*Gradle
-*An IDE(of your choice)
-
-####BDD
-| input                              |Behavior                                      |Output
-|------------------------------------|-----------------------------                 |-----------------------------
-|Enter a word"ab" with a key of 1    |the  word ab is shifted to the right by one.  |encrypted word is "bc"
-|Enter a word"bc" with a key of 1    |the word bc is shifted to the left by one.    |decrypted word is "ab" 
-
-####Known bugs.
-* In case of any bugs please contact the email edkkaburu@gmail.com   
-
-             
+## Copyright and license.
+* (c) Edwin Kaburu
+* MIT License.
